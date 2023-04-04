@@ -1,5 +1,6 @@
 package calculator;
 
+import com.engeto.calculator.ArithmeticException;
 import com.engeto.calculator.Calculator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
@@ -94,7 +95,7 @@ public class CalculatorTest {
 
     @Test
     @Disabled
-    public void squareRoot_rootOfPositiveNumber_returnDouble() {
+    public void squareRoot_rootOfPositiveNumber_returnDouble() throws ArithmeticException {
         int a = 15;
         double expectedResult = 3.872983346207417;
         double result = calculator.squareRoot(a);
@@ -116,7 +117,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void areaOfCircle_radiusOfPositiveNumber_returnDouble() {
+    public void areaOfCircle_radiusOfPositiveNumber_returnDouble() throws ArithmeticException {
         int a = 15;
         double expectedResult = 706.8583470577034;
         double result = calculator.areaOfCircle(a);
