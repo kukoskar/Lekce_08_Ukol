@@ -71,7 +71,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void divide_twoInt_returnDouble() {
+    public void divide_twoInt_returnDouble() throws ArithmeticException {
         int a = 15;
         int b = 20;
         double expectedResult = 0.75;
